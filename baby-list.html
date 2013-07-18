@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>宝宝安全卡 - 保贝书</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" size="144x144" href="res/icon/ios/icon-72-2x.png" />
+<link rel="apple-touch-icon" size="114x114" href="res/icon/ios/icon-57-2x.png" />
+<link rel="apple-touch-icon" size="72x72"   href="res/icon/ios/icon-72.png" />
+<link rel="apple-touch-icon" size="57x57"   href="res/icon/ios/icon-57.png" />
+<link rel="apple-touch-icon" href="res/icon/ios/icon-57.png" />
+<link rel="apple-touch-startup-image" href="res/screen/ios/screen-iphone-portrait.png" media="(device-width: 320px)" sizes="320x640" />
+<link rel="apple-touch-startup-image" href="res/screen/ios/screen-iphone-portrait-2x.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" sizes="640x920" />
+<link rel="apple-touch-startup-image" href="res/screen/ios/screen-iphone-portrait-568h-2x.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" sizes="640x1096" />
+<link rel="stylesheet" href="css/jquery.mobile-1.3.1.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.3.1.min.js"></script>
+</head>
+<body class="bg-body2">
+
+<div data-role="page" id="babyList">
+
+	<div data-role="header" data-position="fixed" class="header-fixed header-3">
+		<a href="#" class="back"><img src="img/back.png" alt="返回" /></a>
+		<h1>宝宝安全卡</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" class="content-2">
+		<div class="baby-list mod-yellow">
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<div class="baby-card">
+						<ul>
+							<li><span>姓名</span><strong>张澜澜</strong></li>
+							<li><span>性别</span><strong>女</strong></li>
+							<li><span>生日</span><strong>2009.7.1</strong></li>
+						</ul>
+						<div class="baby-btn ac">
+							<a href="#popupShare" data-rel="popup" data-position-to="window" class="btn-white">微博求助</a>
+							<a href="#" class="btn-white">一键报警</a>
+						</div>
+					</div>							
+				</div>
+				<div class="ui-block-b ac">
+					<div class="baby-pic"><a rel="external" href="baby.html"><img src="img/pic6.jpg" alt="pic" /></a></div>
+					<div><a rel="external" href="baby.html" title="更多"><img src="img/icon-more.png" alt="更多" /></a></div>			
+				</div>
+			</div>
+		</div>
+
+		<div class="baby-list mod-blue">
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<div class="baby-card">
+						<ul>
+							<li><span>姓名</span><strong>张澜澜</strong></li>
+							<li><span>性别</span><strong>女</strong></li>
+							<li><span>生日</span><strong>2009.7.1</strong></li>
+						</ul>
+						<div class="baby-btn ac">
+							<a href="#popupShare" data-rel="popup" data-position-to="window" class="btn-white">微博求助</a>
+							<a href="#" class="btn-white">一键报警</a>
+						</div>
+					</div>							
+				</div>
+				<div class="ui-block-b ac">
+					<div class="baby-pic"><a rel="external" href="baby.html"><img src="img/pic6.jpg" alt="pic" /></a></div>
+					<div><a rel="external" href="baby.html" title="更多"><img src="img/icon-more.png" alt="更多" /></a></div>
+				</div>
+			</div>
+		</div>		
+
+		<div class="ac">
+			<a rel="external" class="btn-green w-2" href="baby-add.html">新建宝宝安全卡</a>
+		</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" class="footer-3">
+		<!-- /这个模块不能删 -->
+	</div><!-- /footer -->
+
+	<div data-role="popup" id="popupShare" class="popup-share" data-overlay-theme="a">
+		<a href="#popupShareAdd" data-rel="popup" data-position-to="window" class="btn-green">分享到新浪微博</a><br />
+		<a href="#popupShareAdd" data-rel="popup" data-position-to="window" class="btn-green">分享到腾讯微博</a><br />
+		<a href="#" data-rel="back" class="btn-red">取消</a>
+	</div><!-- /popupShare -->
+
+	<div data-role="popup" id="popupShareAdd" class="popup-share" data-overlay-theme="a">
+		<dl class="login-list popup-comment-add">
+			<dd>
+				<div class="ui-textarea-wrap pos-rel">
+					<textarea class="ui-textarea">我女儿张澜澜走丢，请求大家的帮助，谢谢大家。</textarea>
+					<span>50/140</span>
+				</div>				
+			</dd>
+			<dd>
+				<div class="ui-grid-a">
+					<div class="ui-block-a btn-r"><a href="#" data-rel="back" class="btn-red">取消</a></div>
+					<div class="ui-block-b btn-l"><a rel="external" class="btn-green" href="news.html">发布</a></div>
+				</div>
+			</dd>
+		</dl>	
+	</div><!-- /popupShareAdd -->
+
+</div><!-- /page -->
+
+</body>
+</html>
