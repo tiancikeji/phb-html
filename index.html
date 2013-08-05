@@ -29,11 +29,16 @@
           config(['$routeProvider', function($routeProvider) {
           $routeProvider.
             when('/home', {templateUrl: 'home.html', controller: HomeCtrl}).
+            when('/news', {templateUrl: 'news.html', controller: NewsCtrl}).
             // when('/articles/:articleId', {templateUrl: 'news.html', controller: PhoneDetailCtrl}).
             otherwise({redirectTo: '/home'});
         }]);
 
         function HomeCtrl($scope, $routeParams) {
+          // $scope.phoneId = $routeParams.phoneId;
+        }
+
+        function NewsCtrl($scope, $routeParams) {
           // $scope.phoneId = $routeParams.phoneId;
         }
     </script>
