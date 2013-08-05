@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en" ng-app="phb">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
@@ -20,123 +20,28 @@
 <link rel="stylesheet" href="css/style.css" />
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile-1.3.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/angular.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
+
+        angular.module('phb', []).
+          config(['$routeProvider', function($routeProvider) {
+          $routeProvider.
+            when('/home', {templateUrl: 'home.html', controller: HomeCtrl}).
+            // when('/articles/:articleId', {templateUrl: 'news.html', controller: PhoneDetailCtrl}).
+            otherwise({redirectTo: '/home'});
+        }]);
+
+        function HomeCtrl($scope, $routeParams) {
+          // $scope.phoneId = $routeParams.phoneId;
+        }
+          //PhoneDetailCtrl.$inject = ['$scope', '$routeParams'];
     </script>
-    
+
 </head>
 <body class="bg-body2" onload="onBodyLoad()">
-
-<div data-role="page" id="index">
-
-	<div data-role="header" data-position="fixed" class="header-2">
-		<img class="logo-small" src="img/logo-small.jpg" alt="LiveBook">
-		<a href="search.html" rel="external" class="icon-search ui-btn-right"><img src="img/icon-search.jpg" alt="搜索" /></a>
-	</div><!-- /header -->
-
-	<div data-role="content" class="content-2">
-		<div class="banner">
-			<div class="banner-pic"><a rel="external" href="news.html"><img src="img/banner.jpg" alt="banner" /></a></div>
-			<div class="ui-grid-a">
-				<div class="ui-block-a"><strong>户外安全</strong></div>
-				<div class="ui-block-b">
-					<strong><a rel="external" href="news.html">儿童智能手机 可实时追踪位置信息</a></strong><br />
-					<span>2013-07-07</span>
-				</div>
-			</div><!-- /grid-a -->
-		</div>
-		<h2 class="title">春季防感冒</h2>
-		<div class="list-wrap ui-grid-a">
-			<div class="list-pic ui-block-a">
-				<div class="list-cont">
-					<div class="banner-pic"><a href="#"><img src="img/pic1.jpg" alt="pic1" /></a></div>
-					<div>
-						<strong><a href="#">健康日常饮食</a></strong><br />
-						<span>2013-07-07</span>					
-					</div>
-				</div>
-			</div>
-			<div class="list-pic ui-block-b fr">
-				<div class="list-cont">
-					<div class="banner-pic"><a href="#"><img src="img/pic2.jpg" alt="pic2" /></a></div>
-					<div>
-						<strong><a href="#">宝宝感冒了怎么办</a></strong><br />
-						<span>2013-07-07</span>					
-					</div>
-				</div>
-			</div>
-			<div class="list-pic ui-block-a">
-				<div class="list-cont">
-					<div class="banner-pic"><a href="#"><img src="img/pic1.jpg" alt="pic1" /></a></div>
-					<div>
-						<strong><a href="#">健康日常饮食</a></strong><br />
-						<span>2013-07-07</span>					
-					</div>
-				</div>
-			</div>
-			<div class="list-pic ui-block-b fr">
-				<div class="list-cont">
-					<div class="banner-pic"><a href="#"><img src="img/pic2.jpg" alt="pic2" /></a></div>
-					<div>
-						<strong><a href="#">宝宝感冒了怎么办</a></strong><br />
-						<span>2013-07-07</span>					
-					</div>
-				</div>
-			</div>
-		</div><!-- /grid-a -->	
-		<h2 class="title">家庭安全</h2>
-		<div class="list-wrap ui-grid-a">
-			<div class="list-pic ui-block-a">
-				<div class="list-cont">
-					<div class="banner-pic"><a href="#"><img src="img/pic1.jpg" alt="pic1" /></a></div>
-					<div>
-						<strong><a href="#">健康日常饮食</a></strong><br />
-						<span>2013-07-07</span>					
-					</div>
-				</div>
-			</div>
-			<div class="list-pic ui-block-b fr">
-				<div class="list-cont">
-					<div class="banner-pic"><a href="#"><img src="img/pic2.jpg" alt="pic2" /></a></div>
-					<div>
-						<strong><a href="#">宝宝感冒了怎么办</a></strong><br />
-						<span>2013-07-07</span>					
-					</div>
-				</div>
-			</div>
-			<div class="list-pic ui-block-a">
-				<div class="list-cont">
-					<div class="banner-pic"><a href="#"><img src="img/pic1.jpg" alt="pic1" /></a></div>
-					<div>
-						<strong><a href="#">健康日常饮食</a></strong><br />
-						<span>2013-07-07</span>					
-					</div>
-				</div>
-			</div>
-			<div class="list-pic ui-block-b fr">
-				<div class="list-cont">
-					<div class="banner-pic"><a href="#"><img src="img/pic2.jpg" alt="pic2" /></a></div>
-					<div>
-						<strong><a href="#">宝宝感冒了怎么办</a></strong><br />
-						<span>2013-07-07</span>					
-					</div>
-				</div>
-			</div>
-		</div><!-- /grid-a -->				
-	</div><!-- /content -->
-
-	<div data-role="footer" data-position="fixed" class="footer-2">
-		<div class="ui-grid-b">
-			<div class="ui-block-a"><a rel="external" class="icons icon-menu" href="menu.html">菜单</a></div>
-			<div class="ui-block-b ac"><a rel="external" class="icons icon-home" href="index.html">首页</a></div>
-			<div class="ui-block-c"><a rel="external" class="icons icon-bbs" href="user.html">用户</a></div>
-		</div>
-	</div><!-- /footer -->
-
-</div><!-- /page -->
-
-
+<div ng-view></div>
 </body>
 </html>
