@@ -30,6 +30,7 @@
           $routeProvider.
             when('/home', {templateUrl: 'home.html', controller: HomeCtrl}).
             when('/news', {templateUrl: 'news.html', controller: NewsCtrl}).
+            when('/menu', {templateUrl: 'menu.html', controller: MenuCtrl}).
             // when('/articles/:articleId', {templateUrl: 'news.html', controller: PhoneDetailCtrl}).
             otherwise({redirectTo: '/home'});
         }]);
@@ -39,6 +40,10 @@
         }
 
         function NewsCtrl($scope, $routeParams) {
+          // $scope.phoneId = $routeParams.phoneId;
+        }
+
+        function MenuCtrl($scope, $routeParams) {
           // $scope.phoneId = $routeParams.phoneId;
         }
     </script>
