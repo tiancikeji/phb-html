@@ -21,6 +21,10 @@ a:hover { text-decoration: none; }
 .cf:before, .cf:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
 .cf:after { clear: both; }
 
+body {
+    height: 99.9%;
+}
+
 .fl { float: left; }
 .fr { float: right; }
 .ac { text-align: center; }
@@ -33,6 +37,13 @@ a:hover { text-decoration: none; }
 .w-3 { width: 70%; }
 .tips { text-align: center; color: #999; margin: 10px 0; }
 .ui-page { -webkit-backface-visibility: hidden; } /* 解决css3转场效果bug */
+.ui-page {
+	border: 0 none;
+    min-height: 100%;
+    display: block;
+    position: static;
+    width: 100%;
+}
 .btn-green, .btn-red {
 	display: inline-block;
 	vertical-align: middle;
@@ -99,6 +110,16 @@ a:hover { text-decoration: none; }
 .ui-header .ui-btn-inner { padding: 0; }
 .ui-header .ui-mini .ui-btn-inner { padding: 0; }
 .ui-header .ui-focus, .ui-btn:focus { background: none; box-shadow: 0 0 0 #fff; }
+
+.ui-btn-up-c:hover {
+	color: #2f3e46;
+	background: #f4f4f4;
+	box-shadow: inset 0 0 5px #f7c822;
+}
+
+#search {
+	padding-bottom: 70%;
+}
 
 .photopopup .ui-btn-right {
 	border: 0 none;
@@ -347,7 +368,7 @@ a:hover { text-decoration: none; }
 	top: 10px;
 }
 .content-2 {
-	padding: 3.6%;
+	padding: 90px 3.6%;
 }
 .content-3 {
 	padding: 3.6% 7% 3.6% 5%;
