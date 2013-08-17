@@ -25,6 +25,7 @@ body {
     height: 99.9%;
 }
 
+.hidden { display: none; }
 .fl { float: left; }
 .fr { float: right; }
 .ac { text-align: center; }
@@ -117,7 +118,7 @@ body {
 	box-shadow: inset 0 0 5px #f7c822;
 }
 
-#search {
+#search, #news, #commentList, #menu, #question, #answer, #user {
 	padding-bottom: 70%;
 }
 
@@ -798,7 +799,6 @@ body {
 }
 .popup-share {
 	padding: 15px;
-	width: 100%;
 	background: #eee;
 	border-radius: 5px;
 }

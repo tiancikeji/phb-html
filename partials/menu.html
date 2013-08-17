@@ -1,59 +1,96 @@
-<div data-role="page" id="menu">
+<div class="bg-body4 ui-mobile-viewport ui-overlay-c">
+	<div id="menu" class="ui-page ui-body-c ui-page-header-fixed ui-page-footer-fixed ui-page-active">
 
-	<div data-role="header" data-position="fixed" class="header-fixed header-4">
-		<a href="#/home" class="back"><img src="img/back.png" alt="返回" /></a>
-		<h1>目录</h1>
-	</div><!-- /header -->
+		<div class="header-fixed header-4 ui-header ui-bar-a ui-header-fixed">
+			<a href="index.html" class="back"><img src="img/back.png" alt="返回" /></a>
+			<h1 class="ui-title">目录</h1>
+		</div><!-- /header -->
 
-	<div data-role="content" class="content-3">
-		<div data-role="collapsible-set" data-inset="false" class="menu-list">
-			<div data-role="collapsible" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
-				<h3>安全检测</h3>
-				<ul class="sub-menu">
-					<li><a rel="external" href="question.html">安全检测</a><a class="collect" href="#popupCollect" data-rel="popup" data-position-to="window" title="收藏">收藏</a></li>
-					<li><a rel="external" href="question.html">安全检测</a><a class="collect on" href="#popupCollect" data-rel="popup" data-position-to="window" title="收藏">收藏</a></li>
-					<li><a rel="external" href="question.html">安全检测</a><a class="collect" href="#popupCollect" data-rel="popup" data-position-to="window" title="收藏">收藏</a></li>
-				</ul>
+		<div class="content-3">
+			<div class="menu-list ui-collapsible-set">
+				<div class="ui-collapsible ui-collapsible-collapsed ui-first-child">
+					<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+						<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-c">
+							<span class="ui-btn-inner"><span class="ui-btn-text">安全检测</span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span></span>
+						</a>
+					</h3>
+					<ul class="sub-menu">
+						<li><a href="question.html">安全检测</a><a class="inline collect" href="#popupCollect">收藏</a></li>
+						<li><a href="question.html">安全检测</a><a class="inline collect on" href="#popupCollect">收藏</a></li>
+						<li><a href="question.html">安全检测</a><a class="inline collect" href="#popupCollect">收藏</a></li>
+					</ul>
+				</div>
+				<div class="ui-collapsible ui-collapsible-collapsed ui-first-child">
+					<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+						<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-c">
+							<span class="ui-btn-inner"><span class="ui-btn-text">报警手册</span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span></span>
+						</a>
+					</h3>
+					<ul class="sub-menu">
+						<li><a href="baby-about.html">宝宝安全卡</a></li>
+						<li><a href="news.html">报警手册</a><a class="collect on" href="#">收藏</a></li>
+						<li><a href="news.html">报警手册</a><a class="collect" href="#">收藏</a></li>
+					</ul>				
+				</div>
+				<div class="ui-collapsible ui-collapsible-collapsed ui-first-child">
+					<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+						<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-c">
+							<span class="ui-btn-inner"><span class="ui-btn-text">家庭安全</span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span></span>
+						</a>
+					</h3>
+					<ul class="sub-menu">
+						<li><a href="news.html">家庭安全</a><a class="collect on" href="#">收藏</a></li>
+						<li><a href="news.html">家庭安全</a><a class="collect" href="#">收藏</a></li>
+					</ul>				
+				</div>
+				<div class="ui-collapsible ui-collapsible-collapsed ui-first-child">
+					<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+						<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-c">
+							<span class="ui-btn-inner"><span class="ui-btn-text">学校安全</span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span></span>
+						</a>
+					</h3>
+					<ul class="sub-menu">
+						<li><a href="news.html">学校安全</a><a class="collect on" href="#">收藏</a></li>
+						<li><a href="news.html">学校安全</a><a class="collect" href="#">收藏</a></li>
+					</ul>				
+				</div>
+				<div class="ui-collapsible ui-collapsible-collapsed ui-first-child">
+					<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+						<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-c">
+							<span class="ui-btn-inner"><span class="ui-btn-text">交通安全</span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span></span>
+						</a>
+					</h3>
+					<ul class="sub-menu">
+						<li><a href="news.html">交通安全</a><a class="collect on" href="#">收藏</a></li>
+						<li><a href="news.html">交通安全</a><a class="collect" href="#">收藏</a></li>
+					</ul>				
+				</div>
 			</div>
-			<div data-role="collapsible" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
-				<h3>报警手册</h3>
-				<ul class="sub-menu">
-					<li><a rel="external" href="baby-about.html">宝宝安全卡</a></li>
-					<li><a rel="external" href="news.html">报警手册</a><a class="collect on" href="#">收藏</a></li>
-					<li><a rel="external" href="news.html">报警手册</a><a class="collect" href="#">收藏</a></li>
-				</ul>				
-			</div>
-			<div data-role="collapsible" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
-				<h3>家庭安全</h3>
-				<ul class="sub-menu">
-					<li><a rel="external" href="news.html">家庭安全</a><a class="collect on" href="#">收藏</a></li>
-					<li><a rel="external" href="news.html">家庭安全</a><a class="collect" href="#">收藏</a></li>
-				</ul>				
-			</div>
-			<div data-role="collapsible" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
-				<h3>学校安全</h3>
-				<ul class="sub-menu">
-					<li><a rel="external" href="news.html">学校安全</a><a class="collect on" href="#">收藏</a></li>
-					<li><a rel="external" href="news.html">学校安全</a><a class="collect" href="#">收藏</a></li>
-				</ul>				
-			</div>
-			<div data-role="collapsible" data-iconpos="right" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
-				<h3>交通安全</h3>
-				<ul class="sub-menu">
-					<li><a rel="external" href="news.html">交通安全</a><a class="collect on" href="#">收藏</a></li>
-					<li><a rel="external" href="news.html">交通安全</a><a class="collect" href="#">收藏</a></li>
-				</ul>				
-			</div>
+		</div><!-- /content -->
+
+		<div class="bg-menu ac ui-footer ui-bar-a ui-footer-fixed">
+			<a class="icons icon-home" href="#/">首页</a>
+		</div><!-- /footer -->
+	
+		<div class="hidden">
+			<div id="popupCollect" class="popup-share">
+				<p class="ac"><strong>收藏成功！</strong></p>
+				<a href="#" class="btn-red">确定</a>
+			</div><!-- /popupCollect -->
 		</div>
-	</div><!-- /content -->
 
-	<div data-role="footer" data-position="fixed" class="bg-menu ac">
-		<a rel="external" class="icons icon-home" href="index.html">首页</a>
-	</div><!-- /footer -->
-
-	<div data-role="popup" id="popupCollect" class="popup-share" data-overlay-theme="a">
-		<p class="ac"><strong>收藏成功！</strong></p>
-		<a href="#" data-rel="back" class="btn-red">确定</a>
-	</div><!-- /popupCollect -->	
-
+	</div>
 </div><!-- /page -->
+<script>
+	$(document).ready(function(){
+		//popup
+		$(".inline").colorbox({inline:true, width:"60%"});
+
+		//menu
+		$('.menu-list ul').hide();
+            $('.menu-list h3').hover(function () { $(this).addClass('hover') }, function () { $(this).removeClass('hover') }).click(function () {
+                $(this).next().slideToggle('normal');
+            });
+	});
+</script>
+

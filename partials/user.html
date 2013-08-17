@@ -1,79 +1,72 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<meta name="format-detection" content="telephone=no" />
-<title>安全贴 - 保贝书</title>
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="apple-touch-icon" size="144x144" href="res/icon/ios/icon-72-2x.png" />
-<link rel="apple-touch-icon" size="114x114" href="res/icon/ios/icon-57-2x.png" />
-<link rel="apple-touch-icon" size="72x72"   href="res/icon/ios/icon-72.png" />
-<link rel="apple-touch-icon" size="57x57"   href="res/icon/ios/icon-57.png" />
-<link rel="apple-touch-icon" href="res/icon/ios/icon-57.png" />
-<link rel="apple-touch-startup-image" href="res/screen/ios/screen-iphone-portrait.png" media="(device-width: 320px)" sizes="320x640" />
-<link rel="apple-touch-startup-image" href="res/screen/ios/screen-iphone-portrait-2x.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" sizes="640x920" />
-<link rel="apple-touch-startup-image" href="res/screen/ios/screen-iphone-portrait-568h-2x.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" sizes="640x1096" />
-<link rel="stylesheet" href="css/jquery.mobile-1.3.1.css" />
-<link rel="stylesheet" href="css/style.css" />
-<script src="js/jquery.js"></script>
-<script src="js/jquery.mobile-1.3.1.min.js"></script>
-</head>
-<body class="bg-body">
+<div class="bg-body ui-mobile-viewport ui-overlay-c">
+	<div id="user" class="content-4 ui-page ui-body-c ui-page-footer-fixed ui-page-active">
 
-<div data-role="page" id="user" class="content-4">
-	<div data-role="header" class="header-fixed header-5">
-		<a href="index.html" class="back"><img src="img/back2.png" alt="返回" /></a>
-		<h1>安全贴</h1>
-	</div><!-- /header -->
+		<div class="header-fixed header-5 ui-header ui-bar-a">
+			<a href="index.html" class="back ui-btn-left ui-btn ui-shadow ui-btn-corner-all ui-btn-up-a">
+				<span class="ui-btn-inner"><span class="ui-btn-text"><img alt="返回" src="img/back2.png" /></span></span>
+			</a>
+			<h1 class="ui-title">安全贴</h1>
+		</div><!-- /header -->
 
-	<div data-role="content" class="content-5">
-		<div class="user-box">
-			<div class="ui-grid-a">
+		<div class="content-5 ui-content">
+			<div class="user-box">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<div class="avatar2"><img src="img/avatar2.jpg" /></div>
+					</div>
+					<div class="ui-block-b">
+						<div class="user-sign">
+							<h3>我是钢铁侠</h3> 
+							<p>我是钢铁侠，保护地球上所有孩子。</p>
+						</div>	
+					</div>
+				</div><!-- /grid-b -->
+				<div class="user-set"><a class="icons icon-set" href="user-info.html">设置</a></div>
+			</div>
+			<div class="ui-grid-c user-menu">
 				<div class="ui-block-a">
-					<div class="avatar2"><img src="img/avatar2.jpg" /></div>
+					<a href="favorite.html" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+						<span class="ui-btn-inner"><span class="ui-btn-text">我的收藏</span></span>
+					</a>
+					<div class="bg-mark">3</div>
 				</div>
 				<div class="ui-block-b">
-					<div class="user-sign">
-						<h3>我是钢铁侠</h3> 
-						<p>我是钢铁侠，保护地球上所有孩子。</p>
-					</div>	
+					<a href="theme-list.html" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+						<span class="ui-btn-inner"><span class="ui-btn-text">我的话题</span></span>
+					</a>
+					<div class="bg-mark">10</div>
 				</div>
-			</div><!-- /grid-b -->
-			<div class="user-set"><a class="icons icon-set" rel="external" href="user-info.html">设置</a></div>
-		</div>
-		<div class="ui-grid-c user-menu">
-			<div class="ui-block-a">
-				<a href="favorite.html" rel="external" data-role="button">我的收藏</a>
-				<div class="bg-mark">3</div>
+				<div class="ui-block-c">
+					<a href="mycomment-list.html" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+						<span class="ui-btn-inner"><span class="ui-btn-text">我的评论</span></span>
+					</a>
+					<div class="bg-mark">5</div>
+				</div>
+				<div class="ui-block-d">
+					<a href="tell-editor.html" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+						<span class="ui-btn-inner"><span class="ui-btn-text">告诉编辑</span></span>
+					</a>
+					<div class="bg-mark">2</div>
+				</div>
+			</div><!-- /grid-c -->
+			<div class="user-btns">
+				<a href="news-list.html" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+					<span class="ui-btn-inner"><span class="ui-btn-text">新闻信息</span></span>
+				</a>
+				<a href="talk.html" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+					<span class="ui-btn-inner"><span class="ui-btn-text">育儿安全交流</span></span>
+				</a>
+				<a href="recommend-list.html" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+					<span class="ui-btn-inner"><span class="ui-btn-text">安全推荐</span></span>
+				</a>
 			</div>
-			<div class="ui-block-b">
-				<a href="theme-list.html" rel="external" data-role="button">我的话题</a>
-				<div class="bg-mark">10</div>
-			</div>
-			<div class="ui-block-c">
-				<a href="mycomment-list.html" rel="external" data-role="button">我的评论</a>
-				<div class="bg-mark">5</div>
-			</div>
-			<div class="ui-block-d">
-				<a href="tell-editor.html" rel="external" data-role="button">告诉编辑</a>
-				<div class="bg-mark">2</div>
-			</div>
-		</div><!-- /grid-c -->
-		<div class="user-btns">
-			<a href="news-list.html" rel="external" data-role="button">新闻信息</a>
-			<a href="talk.html" rel="external" data-role="button">育儿安全交流</a>
-			<a href="recommend-list.html" rel="external" data-role="button">安全推荐</a>
-		</div>
-	</div><!-- /content -->
+		</div><!-- /content -->
 
-	<div data-role="footer" data-position="fixed" class="footer-5">
-		<a class="card-menu" rel="external" href="baby-list.html">宝宝安全卡<i><img src="img/icon-up.png" alt="up" /></i></a>
-	</div><!-- /footer -->
+		<div class="footer-5 ui-footer ui-bar-a ui-footer-fixed">
+			<a class="card-menu ui-btn ui-shadow ui-btn-corner-all ui-btn-up-a" href="baby-list.html">
+				<span class="ui-btn-inner"><span class="ui-btn-text">宝宝安全卡<i><img alt="up" src="img/icon-up.png" /></i></span></span>
+			</a>
+		</div><!-- /footer -->
 
+	</div>
 </div><!-- /page -->
-
-</body>
-</html>
